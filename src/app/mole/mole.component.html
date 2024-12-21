@@ -1,0 +1,20 @@
+<div class="game">
+  <h1>Whack-a-Mole</h1>
+  <div class="controls">
+    <button (click)="startGame()">Start</button>
+    <button (click)="resetGame()">Reset</button>
+    <button (click)="stopGame()">Stop</button>
+  </div>
+
+  <div class="score">
+    <h2>Score: {{ score }}</h2>
+    <h3>Time Left: {{ timeLeft }} seconds</h3>
+  </div>
+
+  <!-- Mole component, only visible when isVisible is true -->
+  <div class="character" *ngIf="isVisible" (click)="hitCharacter()" [style.top]="molePosition.top" [style.left]="molePosition.left">
+    <ng-container *ngIf="characterType === 'mole'">🐹</ng-container>
+    <ng-container *ngIf="characterType === 'worm'">🐍</ng-container>
+  </div>
+
+</div>

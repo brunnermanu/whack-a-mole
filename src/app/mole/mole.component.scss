@@ -1,0 +1,30 @@
+.game {
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+.character {
+	position: absolute;
+	font-size: 50px;
+	margin: 20px;
+	padding: 3px;
+	background-color: #ffcc00;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 60px;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+.controls button {
+	margin: 10px;
+	padding: 10px 20px;
+	font-size: 16px;
+}
+
+.score {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
